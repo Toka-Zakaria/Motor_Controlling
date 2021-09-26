@@ -52,7 +52,9 @@ int main(void)
 
 	/*configure Resistor pin as input pin to read the value of pot*/
 	CLEAR_BIT(RESISTOR_DIRECTION_REG, RESISTOR_PIN);
-	/***********************Application*************************/
+	/*******************************************************************************
+	 *                               Application                                   *
+	 *******************************************************************************/
 	while(1)
 	{
 		LCD_goToRowColumn(0,12); /* display the number every time at this position */
